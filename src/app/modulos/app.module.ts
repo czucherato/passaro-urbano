@@ -9,7 +9,7 @@ registerLocaleData(btBr, 'pt-BR');
 
 //pipe
 import { DescricaoReduzida } from './../util/descricao-reduzida.pipe';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from '../componentes/app.component';
 import { TopoComponent } from '../componentes/topo/topo.component';
 import { RodapeComponent } from '../componentes/rodape/rodape.component';
@@ -40,7 +40,8 @@ import { OrdemCompraSucesso } from '../componentes/ordem-compra-sucesso/ordem-co
   ],
   imports: [
     BrowserModule,
-    HttpModule, 
+    HttpModule,
+    FormsModule,
     RouterModule.forRoot(ROTAS)
   ],
   providers: [{
